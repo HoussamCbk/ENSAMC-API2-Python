@@ -3,9 +3,10 @@ import re
 import shutil
 
 
+
 # Paths (using raw strings to handle Windows backslashes correctly)
 posts_dir = r"C:\Users\HoussamClap\Documents\Obsidian\ENSAMC\Courses\Python"
-attachments_dir = r"c:\Users\HoussamClap\AppData\Local\Packages\MicrosoftWindows.Client.Core_cw5n1h2txyewy\TempState\ScreenClip"
+attachments_dir = r"c:\Users\HoussamClap\AppData\Local\Packages\MicrosoftWindows.Client.Core_cw5n1h2txyewy\TempState\ScreenClip\"
 static_images_dir = r"C:\Users\HoussamClap\Documents\Hugo\ENSAMC-API2-Python\static\images"
 
 # Step 1: Process each markdown file in the posts directory
