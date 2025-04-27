@@ -42,7 +42,3 @@ tags:
 **By Choubik Houssam**
 
 
-mamamamama
-!![Image Description](/images/{40F63F3E-BCEF-4D9C-AF99-A7A3128C92D2}.png)
-
-manaaal the best <3
