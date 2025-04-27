@@ -1,6 +1,7 @@
 ---
 title: Python-week1
 date: 2025-04-27
+author: CHOUBIK Houssam
 draft: false
 tags:
   - Python

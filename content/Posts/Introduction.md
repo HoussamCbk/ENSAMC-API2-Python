@@ -1,6 +1,7 @@
 ---
 title: Python Notes
 date: 2025-04-27
+author: CHOUBIK Houssam
 draft: false
 tags:
   - Python
