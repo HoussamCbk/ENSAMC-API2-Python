@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python - Copies on Terminal</title>
+    <link>//localhost:1313/python---copie/</link>
+    <description>Recent content in Python - Copies on Terminal</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="//localhost:1313/python---copie/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>//localhost:1313/python---copie/introduction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/python---copie/introduction/</guid>
+      <description>&lt;h1 id=&#34;-python---course-notes&#34;&gt;🐍 Python - Course Notes&lt;/h1&gt;&#xA;&lt;p&gt;&lt;em&gt;Date: 27-04-2025&lt;/em&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;-general-info&#34;&gt;📚 General Info&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Instructor&lt;/strong&gt;: Mr El Omari Achraf&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Semester&lt;/strong&gt;: 4&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Course Link&lt;/strong&gt;: &lt;a href=&#34;https://app.ensamien.com/cours/programmation-python/docs/cSRzZceUG1DlqbZANMki&#34;&gt;Link to course material&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Course Description&lt;/strong&gt;:&lt;br&gt;&#xA;A comprehensive introduction to Python programming, covering basic to advanced topics, with a focus on practical applications in labs and projects.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;-week-by-week-lectures&#34;&gt;📅 Week-by-Week Lectures&lt;/h2&gt;&#xA;&lt;h3 id=&#34;week-1-introduction-to-python&#34;&gt;Week 1: Introduction to Python&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Topics Covered&lt;/strong&gt;: TP1 &amp;amp; TP2 (Introduction to Python, Variables, Data Types)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Summary&lt;/strong&gt;: &lt;a href=&#34;Python-week1.md&#34;&gt;Link to Week 1 Notes&lt;/a&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Brief overview of Python syntax, basic data types (strings, integers, etc.), and operations.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;-key-concepts-to-remember&#34;&gt;🧠 Key Concepts to Remember&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Concept 1&lt;/strong&gt;: Understanding Python syntax, data types, and operations.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Concept 2&lt;/strong&gt;: Mastery of loops, functions, and problem-solving techniques.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;-additional-resources&#34;&gt;🔗 Additional Resources&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Official Python Documentation&lt;/strong&gt;: &lt;a href=&#34;https://docs.python.org&#34;&gt;Link to Python Docs&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Online Courses&lt;/strong&gt;: &lt;a href=&#34;https://www.w3schools.com/python/&#34;&gt;Python for Beginners&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;&lt;strong&gt;By Choubik Houssam&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
