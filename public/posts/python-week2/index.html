@@ -9,7 +9,7 @@
 <meta name="description" content="Les types de variables : On a deux types de variables , variable locale et variable globale.
 Les variables locales sont propres à la fonction. Les variables globales sont définies à l&rsquo;extérieur de la fonction et peuvent être utiliser par n&rsquo;importe quelle fonction. Exemple de variable locale :
 def ma_fonction(): x = 10 # Variable locale print(&#34;Dans la fonction, x =&#34;, x) ma_fonction() # Affiche la valeur x Exemple de variable globale
-y = 20 # Variable globale def ma_fonction(): print(&#34;Dans la fonction, y =&#34;, y) ma_fonction() # Affiche : Dans la fonction, y = 20 print(&#34;En dehors de la fonction, y =&#34;, y) # Affiche : En dehors de la fonction, y = 20 TP3 Exercice 1 : Enoncé : Menu d&rsquo;Options avec Fonctions, match et Boucles 1- Saisie de l&rsquo;utilisateur : Demandez à l&rsquo;utilisateur de saisir un nombre entier positif. Gérez les cas d&rsquo;erreur, par exemple, si l&rsquo;utilisateur saisit un nombre négatif ou une entrée non valide, en utilisant une boucle FAIRE … TANQUE. 2- Affichage du Menu : Affichez un menu offrant les options suivantes, en plus d&rsquo;une option pour quitter : A. Vérifier et afficher si le nombre est un nombre premier. B. Tester si un entier donné en entrée est pair ou impair. C. Convertir un nombre décimal non négatif en base b (où b est également saisi par l&rsquo;utilisateur). D. Calculer la factorielle d’un entier non négatif donné en entrée. Q. Quitter le menu. 3- Création de Fonctions : Pour chaque action du menu, créez une fonction distincte : A. est_premier(nombre) B. est_pair_impair(nombre) C. convertir_base(nombre, base) D. calculer_factorielle(nombre) 4- Traitement du Choix :Utilisez match pour exécuter le bloc de code spécifique selon l&rsquo;option choisie par l&rsquo;utilisateur. Assurez-vous d&rsquo;appeler la fonction correspondante en fonction du choix. 5- Boucle Continue : Le programme doit continuer à exécuter, affichant le menu après chaque action, jusqu&rsquo;à ce que l&rsquo;utilisateur choisisse de quitter le programme (utiliser la boucle FAIRE … TANQUE).
+y = 20 # Variable globale def ma_fonction(): print(&#34;Dans la fonction, y =&#34;, y) ma_fonction() # Affiche : Dans la fonction, y = 20 print(&#34;En dehors de la fonction, y =&#34;, y) # Affiche : En dehors de la fonction, y = 20 TP3 Exercice 1 : Enoncé : Menu d&rsquo;Options avec Fonctions, match et Boucles
 " />
 <meta name="keywords" content="" />
 
@@ -85,7 +85,7 @@ y = 20 # Variable globale def ma_fonction(): print(&#34;Dans la fonction, y =&#3
 <meta property="og:description" content="Les types de variables : On a deux types de variables , variable locale et variable globale.
 Les variables locales sont propres à la fonction. Les variables globales sont définies à l&rsquo;extérieur de la fonction et peuvent être utiliser par n&rsquo;importe quelle fonction. Exemple de variable locale :
 def ma_fonction(): x = 10 # Variable locale print(&#34;Dans la fonction, x =&#34;, x) ma_fonction() # Affiche la valeur x Exemple de variable globale
-y = 20 # Variable globale def ma_fonction(): print(&#34;Dans la fonction, y =&#34;, y) ma_fonction() # Affiche : Dans la fonction, y = 20 print(&#34;En dehors de la fonction, y =&#34;, y) # Affiche : En dehors de la fonction, y = 20 TP3 Exercice 1 : Enoncé : Menu d&rsquo;Options avec Fonctions, match et Boucles 1- Saisie de l&rsquo;utilisateur : Demandez à l&rsquo;utilisateur de saisir un nombre entier positif. Gérez les cas d&rsquo;erreur, par exemple, si l&rsquo;utilisateur saisit un nombre négatif ou une entrée non valide, en utilisant une boucle FAIRE … TANQUE. 2- Affichage du Menu : Affichez un menu offrant les options suivantes, en plus d&rsquo;une option pour quitter : A. Vérifier et afficher si le nombre est un nombre premier. B. Tester si un entier donné en entrée est pair ou impair. C. Convertir un nombre décimal non négatif en base b (où b est également saisi par l&rsquo;utilisateur). D. Calculer la factorielle d’un entier non négatif donné en entrée. Q. Quitter le menu. 3- Création de Fonctions : Pour chaque action du menu, créez une fonction distincte : A. est_premier(nombre) B. est_pair_impair(nombre) C. convertir_base(nombre, base) D. calculer_factorielle(nombre) 4- Traitement du Choix :Utilisez match pour exécuter le bloc de code spécifique selon l&rsquo;option choisie par l&rsquo;utilisateur. Assurez-vous d&rsquo;appeler la fonction correspondante en fonction du choix. 5- Boucle Continue : Le programme doit continuer à exécuter, affichant le menu après chaque action, jusqu&rsquo;à ce que l&rsquo;utilisateur choisisse de quitter le programme (utiliser la boucle FAIRE … TANQUE).
+y = 20 # Variable globale def ma_fonction(): print(&#34;Dans la fonction, y =&#34;, y) ma_fonction() # Affiche : Dans la fonction, y = 20 print(&#34;En dehors de la fonction, y =&#34;, y) # Affiche : En dehors de la fonction, y = 20 TP3 Exercice 1 : Enoncé : Menu d&rsquo;Options avec Fonctions, match et Boucles
 " />
 <meta property="og:url" content="/posts/python-week2/" />
 <meta property="og:site_name" content="Terminal" />
@@ -212,21 +212,26 @@ On a deux types de variables , variable <strong>locale</strong> et variable <str
 </span></span></code></pre></div><h2 id="tp3">TP3<a href="#tp3" class="hanchor" ariaLabel="Anchor">#</a> </h2>
 <p>Exercice 1 :
 <strong>Enoncé :</strong>
-Menu d&rsquo;Options avec Fonctions, match et Boucles
-1- Saisie de l&rsquo;utilisateur : Demandez à l&rsquo;utilisateur de saisir un nombre entier positif. Gérez les cas d&rsquo;erreur, par exemple, si l&rsquo;utilisateur saisit un nombre négatif ou une entrée non valide, en utilisant une boucle FAIRE … TANQUE.
-2- Affichage du Menu : Affichez un menu offrant les options suivantes, en plus d&rsquo;une option pour quitter :
-A. Vérifier et afficher si le nombre est un nombre premier.
-B. Tester si un entier donné en entrée est pair ou impair.
-C. Convertir un nombre décimal non négatif en base b (où b est également saisi par l&rsquo;utilisateur).
-D. Calculer la factorielle d’un entier non négatif donné en entrée.
-Q. Quitter le menu.
+Menu d&rsquo;Options avec Fonctions, match et Boucles</p>
+<pre><code>1- Saisie de l'utilisateur : Demandez à l'utilisateur de saisir un nombre entier positif. Gérez les cas d'erreur, par exemple, si l'utilisateur saisit un nombre négatif ou une entrée non valide, en utilisant une boucle FAIRE … TANQUE.
+
+2- Affichage du Menu : Affichez un menu offrant les options suivantes, en plus d'une option pour quitter :
+	A. Vérifier et afficher si le nombre est un nombre premier.
+	B. Tester si un entier donné en entrée est pair ou impair.
+	C. Convertir un nombre décimal non négatif en base b (où b est également saisi par l'utilisateur).
+	D. Calculer la factorielle d’un entier non négatif donné en entrée.
+	Q. Quitter le menu.
+	
 3- Création de Fonctions : Pour chaque action du menu, créez une fonction distincte :
-A. est_premier(nombre)
-B. est_pair_impair(nombre)
-C. convertir_base(nombre, base)
-D. calculer_factorielle(nombre)
-4- Traitement du Choix :Utilisez match pour exécuter le bloc de code spécifique selon l&rsquo;option choisie par l&rsquo;utilisateur. Assurez-vous d&rsquo;appeler la fonction correspondante en fonction du choix.
-5- Boucle Continue : Le programme doit continuer à exécuter, affichant le menu après chaque action, jusqu&rsquo;à ce que l&rsquo;utilisateur choisisse de quitter le programme (utiliser la boucle FAIRE … TANQUE).</p>
+	A. est_premier(nombre)
+	B. est_pair_impair(nombre)
+	C. convertir_base(nombre, base)
+	D. calculer_factorielle(nombre)
+	
+4- Traitement du Choix :Utilisez match pour exécuter le bloc de code spécifique selon l'option choisie par l'utilisateur. Assurez-vous d'appeler la fonction correspondante en fonction du choix.
+
+5- Boucle Continue : Le programme doit continuer à exécuter, affichant le menu après chaque action, jusqu'à ce que l'utilisateur choisisse de quitter le programme (utiliser la boucle FAIRE … TANQUE).
+</code></pre>
 <p><strong>Corrigé :</strong></p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">est_premier</span>(nombre):
 </span></span><span style="display:flex;"><span>

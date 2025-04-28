@@ -34,19 +34,24 @@ print("En dehors de la fonction, y =", y) # Affiche : En dehors de la fonction, 
  Exercice 1 : 
  **Enoncé :**
  Menu d'Options avec Fonctions, match et Boucles
+ 
 	1- Saisie de l'utilisateur : Demandez à l'utilisateur de saisir un nombre entier positif. Gérez les cas d'erreur, par exemple, si l'utilisateur saisit un nombre négatif ou une entrée non valide, en utilisant une boucle FAIRE … TANQUE.
+	
 	2- Affichage du Menu : Affichez un menu offrant les options suivantes, en plus d'une option pour quitter :
 		A. Vérifier et afficher si le nombre est un nombre premier.
 		B. Tester si un entier donné en entrée est pair ou impair.
 		C. Convertir un nombre décimal non négatif en base b (où b est également saisi par l'utilisateur).
 		D. Calculer la factorielle d’un entier non négatif donné en entrée.
 		Q. Quitter le menu.
+		
 	3- Création de Fonctions : Pour chaque action du menu, créez une fonction distincte :
 		A. est_premier(nombre)
 		B. est_pair_impair(nombre)
 		C. convertir_base(nombre, base)
 		D. calculer_factorielle(nombre)
+		
 	4- Traitement du Choix :Utilisez match pour exécuter le bloc de code spécifique selon l'option choisie par l'utilisateur. Assurez-vous d'appeler la fonction correspondante en fonction du choix.
+	
 	5- Boucle Continue : Le programme doit continuer à exécuter, affichant le menu après chaque action, jusqu'à ce que l'utilisateur choisisse de quitter le programme (utiliser la boucle FAIRE … TANQUE).
 	
 **Corrigé :**
