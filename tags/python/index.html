@@ -350,6 +350,55 @@ A comprehensive introduction to Python programming, covering basic to advanced t
         
       </article>
     
+      <article class="post on-list">
+        <h1 class="post-title">
+          <a href="/posts/python-week2/">Python-week1</a>
+        </h1>
+        <div class="post-meta"><time class="post-date">2025-04-27</time><span class="post-author">CHOUBIK Houssam</span></div>
+
+        
+          <span class="post-tags">
+            
+            #<a href="/tags/python/">Python</a>&nbsp;
+            
+            #<a href="/tags/ensamc/">ENSAMC</a>&nbsp;
+            
+          </span>
+        
+
+        
+
+
+        <div class="post-content">
+          
+            <p>Les types de variables :
+On a deux types de variables , variable <strong>locale</strong> et variable <strong>globale</strong>.</p>
+<ul>
+<li>Les variables locales sont propres à la fonction.</li>
+<li>Les variables globales sont définies à l&rsquo;extérieur de la fonction et peuvent être utiliser par n&rsquo;importe quelle fonction.</li>
+</ul>
+<p>Exemple de <strong>variable locale</strong> :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">ma_fonction</span>():
+</span></span><span style="display:flex;"><span>x <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span> <span style="color:#75715e"># Variable locale</span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Dans la fonction, x =&#34;</span>, x)
+</span></span><span style="display:flex;"><span>ma_fonction() <span style="color:#75715e"># Affiche la valeur x</span>
+</span></span></code></pre></div><p>Exemple de <strong>variable globale</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>y <span style="color:#f92672">=</span> <span style="color:#ae81ff">20</span> <span style="color:#75715e"># Variable globale</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">ma_fonction</span>():
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Dans la fonction, y =&#34;</span>, y)
+</span></span><span style="display:flex;"><span>ma_fonction() <span style="color:#75715e"># Affiche : Dans la fonction, y = 20</span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;En dehors de la fonction, y =&#34;</span>, y) <span style="color:#75715e"># Affiche : En dehors de la fonction, y = 20</span>
+</span></span></code></pre></div>
+          
+        </div>
+
+        
+          <div>
+            <a class="read-more button inline" href="/posts/python-week2/">[Read more]</a>
+          </div>
+        
+      </article>
+    
 
     <div class="pagination">
   <div class="pagination__buttons">
