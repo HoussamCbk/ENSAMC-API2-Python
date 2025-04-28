@@ -393,6 +393,104 @@ Menu d&rsquo;Options avec Fonctions, match et Boucles</p>
 </span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">case</span> _:
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>                print(<span style="color:#e6db74">&#34;Erreur : option invalide.&#34;</span>)
+</span></span></code></pre></div><p>Exercice 2 :</p>
+<p><strong>Enoncé :</strong>
+On souhaite programmer une application simulant le fonctionnement d&rsquo;un distributeur automatique de billets de banque.</p>
+<pre><code>1.Le programme demande à l'utilisateur de saisir un montant qu'il souhaite retirer.
+
+2.Il vérifie si le montant est un multiple de 100 DH (montant minimal requis pour un retrait).
+
+3.Si le montant est valide, le programme simule la remise des billets en optimisant le nombre de billets distribués (200 DH et 100 DH).
+
+4.Le programme affiche ensuite un récapitulatif du retrait effectué.
+
+Q1. Écrire une fonction pour demander à l'utilisateur le montant à retirer :
+Si le montant n'est pas un multiple de 100 DH, la fonction redemande un montant valide.
+Q2. Écrire une fonction qui vérifie si le montant demandé est inférieur ou égal au solde disponible. Le solde disponible est fixé dans le programme principal (par exemple, 5000 DH) et est affiché à l'utilisateur avant qu'il ne saisisse le montant. Si le montant est supérieur au solde disponible, afficher un message d'erreur. Sinon, valider le montant demandé.
+Q3. Écrire une fonction qui simule la remise des billets en utilisant le minimum de billets : Les billets disponibles sont : 200 DH et 100 DH.
+Par exemple :
+Montant à retirer : 700 DH
+Billets distribués : 3 billet(s) de 200 DH + 1 billet(s) de 100 DH
+ENSAM-Casablanca Programmation Python API-2
+3
+Q4. Écrire une fonction qui met à jour le solde disponible en fonction du montant retiré.
+Q5. Écrire un programme principal pour simuler l’interaction complète avec l’utilisateur, en utilisant les fonctions précédentes :
+1-Demander le montant.
+2-Vérifier la validité du montant et le solde disponible.
+3-Calculer et afficher les billets distribués.
+4-Mettre à jour et afficher le solde après le retrait.
+</code></pre>
+<p><strong>Corrigé :</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">retirer</span>(montant):
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">while</span> montant <span style="color:#f92672">%</span> <span style="color:#ae81ff">100</span> <span style="color:#f92672">!=</span> <span style="color:#ae81ff">0</span>:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">&#34;Le montant doit être un multiple de 100 DH.&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        montant <span style="color:#f92672">=</span> int(input(<span style="color:#e6db74">&#34;Veuillez saisir un montant à retirer : &#34;</span>))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> montant
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">verifier_solde</span>(montant, solde):
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> montant <span style="color:#f92672">&gt;</span> solde:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">&#34;Montant supérieur au solde disponible.&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">False</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">True</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">35</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">distribuer_billets</span>(montant):
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    billets200 <span style="color:#f92672">=</span> montant <span style="color:#f92672">//</span> <span style="color:#ae81ff">200</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    montant <span style="color:#f92672">=</span> montant <span style="color:#f92672">%</span> <span style="color:#ae81ff">200</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    billets100 <span style="color:#f92672">=</span> montant <span style="color:#f92672">//</span> <span style="color:#ae81ff">100</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> billets200, billets100
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">mettre_a_jour_solde</span>(solde, montant):
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> solde <span style="color:#f92672">-</span> montant
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>solde <span style="color:#f92672">=</span> <span style="color:#ae81ff">5000</span>  
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Solde disponible : </span><span style="color:#e6db74">{</span>solde<span style="color:#e6db74">}</span><span style="color:#e6db74"> DH&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>montant <span style="color:#f92672">=</span> int(input(<span style="color:#e6db74">&#34;Veuillez saisir le montant à retirer : &#34;</span>))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>montant <span style="color:#f92672">=</span> retirer(montant)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> verifier_solde(montant, solde):
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    billets200, billets100 <span style="color:#f92672">=</span> distribuer_billets(montant)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    solde <span style="color:#f92672">=</span> mettre_a_jour_solde(solde, montant)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Billets distribués : </span><span style="color:#e6db74">{</span>billets200<span style="color:#e6db74">}</span><span style="color:#e6db74"> billet(s) de 200 DH + </span><span style="color:#e6db74">{</span>billets100<span style="color:#e6db74">}</span><span style="color:#e6db74"> billet(s) de 100 DH&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Solde après retrait : </span><span style="color:#e6db74">{</span>solde<span style="color:#e6db74">}</span><span style="color:#e6db74"> DH&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Retrait annulé.&#34;</span>)
 </span></span></code></pre></div>
       </div></div>
 
