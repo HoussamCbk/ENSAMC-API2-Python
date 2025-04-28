@@ -23,7 +23,9 @@ tags:
 ## 📅 Week-by-Week Lectures
 ### Week 1: Introduction to Python  
 - **Topics Covered**: TP1 & TP2 (Introduction to Python, Variables, Data Types)
-- **Summary**: [Link to Week 1 Notes](Python-week1.md)  
+- **Summary**: 
+- [Link to Week 1 Notes](Python-week1.md)  
+- [Link to Week 2 Notes](Python-week2.md)  
   - Brief overview of Python syntax, basic data types (strings, integers, etc.), and operations.
 
 ---
