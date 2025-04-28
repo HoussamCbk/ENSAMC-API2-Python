@@ -1,6 +1,6 @@
 ---
-title: Python-week1
-date: 2025-04-27
+title: Python-week2
+date: 2025-04-28
 author: CHOUBIK Houssam
 draft: false
 tags:

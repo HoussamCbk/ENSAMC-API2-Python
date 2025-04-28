@@ -25,8 +25,12 @@ tags:
 - **Topics Covered**: TP1 & TP2 (Introduction to Python, Variables, Data Types)
 - **Summary**: 
 - [Link to Week 1 Notes](Python-week1.md)  
-- [Link to Week 2 Notes](Python-week2.md)  
   - Brief overview of Python syntax, basic data types (strings, integers, etc.), and operations.
+  ### Week 2:  Python  scripts
+- **Topics Covered**: TP3
+- **Summary**:  
+- [Link to Week 2 Notes](Python-week2.md)  
+
 
 ---
 
