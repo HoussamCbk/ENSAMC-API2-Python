@@ -9,7 +9,8 @@
 <meta name="description" content="Les types de variables : On a deux types de variables , variable locale et variable globale.
 Les variables locales sont propres à la fonction. Les variables globales sont définies à l&rsquo;extérieur de la fonction et peuvent être utiliser par n&rsquo;importe quelle fonction. Exemple de variable locale :
 def ma_fonction(): x = 10 # Variable locale print(&#34;Dans la fonction, x =&#34;, x) ma_fonction() # Affiche la valeur x Exemple de variable globale
-y = 20 # Variable globale def ma_fonction(): print(&#34;Dans la fonction, y =&#34;, y) ma_fonction() # Affiche : Dans la fonction, y = 20 print(&#34;En dehors de la fonction, y =&#34;, y) # Affiche : En dehors de la fonction, y = 20 " />
+y = 20 # Variable globale def ma_fonction(): print(&#34;Dans la fonction, y =&#34;, y) ma_fonction() # Affiche : Dans la fonction, y = 20 print(&#34;En dehors de la fonction, y =&#34;, y) # Affiche : En dehors de la fonction, y = 20 TP3 Exercice 1 : Enoncé : Menu d&rsquo;Options avec Fonctions, match et Boucles 1- Saisie de l&rsquo;utilisateur : Demandez à l&rsquo;utilisateur de saisir un nombre entier positif. Gérez les cas d&rsquo;erreur, par exemple, si l&rsquo;utilisateur saisit un nombre négatif ou une entrée non valide, en utilisant une boucle FAIRE … TANQUE. 2- Affichage du Menu : Affichez un menu offrant les options suivantes, en plus d&rsquo;une option pour quitter : A. Vérifier et afficher si le nombre est un nombre premier. B. Tester si un entier donné en entrée est pair ou impair. C. Convertir un nombre décimal non négatif en base b (où b est également saisi par l&rsquo;utilisateur). D. Calculer la factorielle d’un entier non négatif donné en entrée. Q. Quitter le menu. 3- Création de Fonctions : Pour chaque action du menu, créez une fonction distincte : A. est_premier(nombre) B. est_pair_impair(nombre) C. convertir_base(nombre, base) D. calculer_factorielle(nombre) 4- Traitement du Choix :Utilisez match pour exécuter le bloc de code spécifique selon l&rsquo;option choisie par l&rsquo;utilisateur. Assurez-vous d&rsquo;appeler la fonction correspondante en fonction du choix. 5- Boucle Continue : Le programme doit continuer à exécuter, affichant le menu après chaque action, jusqu&rsquo;à ce que l&rsquo;utilisateur choisisse de quitter le programme (utiliser la boucle FAIRE … TANQUE).
+" />
 <meta name="keywords" content="" />
 
   <meta name="robots" content="noodp" />
@@ -84,7 +85,8 @@ y = 20 # Variable globale def ma_fonction(): print(&#34;Dans la fonction, y =&#3
 <meta property="og:description" content="Les types de variables : On a deux types de variables , variable locale et variable globale.
 Les variables locales sont propres à la fonction. Les variables globales sont définies à l&rsquo;extérieur de la fonction et peuvent être utiliser par n&rsquo;importe quelle fonction. Exemple de variable locale :
 def ma_fonction(): x = 10 # Variable locale print(&#34;Dans la fonction, x =&#34;, x) ma_fonction() # Affiche la valeur x Exemple de variable globale
-y = 20 # Variable globale def ma_fonction(): print(&#34;Dans la fonction, y =&#34;, y) ma_fonction() # Affiche : Dans la fonction, y = 20 print(&#34;En dehors de la fonction, y =&#34;, y) # Affiche : En dehors de la fonction, y = 20 " />
+y = 20 # Variable globale def ma_fonction(): print(&#34;Dans la fonction, y =&#34;, y) ma_fonction() # Affiche : Dans la fonction, y = 20 print(&#34;En dehors de la fonction, y =&#34;, y) # Affiche : En dehors de la fonction, y = 20 TP3 Exercice 1 : Enoncé : Menu d&rsquo;Options avec Fonctions, match et Boucles 1- Saisie de l&rsquo;utilisateur : Demandez à l&rsquo;utilisateur de saisir un nombre entier positif. Gérez les cas d&rsquo;erreur, par exemple, si l&rsquo;utilisateur saisit un nombre négatif ou une entrée non valide, en utilisant une boucle FAIRE … TANQUE. 2- Affichage du Menu : Affichez un menu offrant les options suivantes, en plus d&rsquo;une option pour quitter : A. Vérifier et afficher si le nombre est un nombre premier. B. Tester si un entier donné en entrée est pair ou impair. C. Convertir un nombre décimal non négatif en base b (où b est également saisi par l&rsquo;utilisateur). D. Calculer la factorielle d’un entier non négatif donné en entrée. Q. Quitter le menu. 3- Création de Fonctions : Pour chaque action du menu, créez une fonction distincte : A. est_premier(nombre) B. est_pair_impair(nombre) C. convertir_base(nombre, base) D. calculer_factorielle(nombre) 4- Traitement du Choix :Utilisez match pour exécuter le bloc de code spécifique selon l&rsquo;option choisie par l&rsquo;utilisateur. Assurez-vous d&rsquo;appeler la fonction correspondante en fonction du choix. 5- Boucle Continue : Le programme doit continuer à exécuter, affichant le menu après chaque action, jusqu&rsquo;à ce que l&rsquo;utilisateur choisisse de quitter le programme (utiliser la boucle FAIRE … TANQUE).
+" />
 <meta property="og:url" content="/posts/python-week2/" />
 <meta property="og:site_name" content="Terminal" />
 
@@ -207,6 +209,185 @@ On a deux types de variables , variable <strong>locale</strong> et variable <str
 </span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Dans la fonction, y =&#34;</span>, y)
 </span></span><span style="display:flex;"><span>ma_fonction() <span style="color:#75715e"># Affiche : Dans la fonction, y = 20</span>
 </span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;En dehors de la fonction, y =&#34;</span>, y) <span style="color:#75715e"># Affiche : En dehors de la fonction, y = 20</span>
+</span></span></code></pre></div><h2 id="tp3">TP3<a href="#tp3" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p>Exercice 1 :
+<strong>Enoncé :</strong>
+Menu d&rsquo;Options avec Fonctions, match et Boucles
+1- Saisie de l&rsquo;utilisateur : Demandez à l&rsquo;utilisateur de saisir un nombre entier positif. Gérez les cas d&rsquo;erreur, par exemple, si l&rsquo;utilisateur saisit un nombre négatif ou une entrée non valide, en utilisant une boucle FAIRE … TANQUE.
+2- Affichage du Menu : Affichez un menu offrant les options suivantes, en plus d&rsquo;une option pour quitter :
+A. Vérifier et afficher si le nombre est un nombre premier.
+B. Tester si un entier donné en entrée est pair ou impair.
+C. Convertir un nombre décimal non négatif en base b (où b est également saisi par l&rsquo;utilisateur).
+D. Calculer la factorielle d’un entier non négatif donné en entrée.
+Q. Quitter le menu.
+3- Création de Fonctions : Pour chaque action du menu, créez une fonction distincte :
+A. est_premier(nombre)
+B. est_pair_impair(nombre)
+C. convertir_base(nombre, base)
+D. calculer_factorielle(nombre)
+4- Traitement du Choix :Utilisez match pour exécuter le bloc de code spécifique selon l&rsquo;option choisie par l&rsquo;utilisateur. Assurez-vous d&rsquo;appeler la fonction correspondante en fonction du choix.
+5- Boucle Continue : Le programme doit continuer à exécuter, affichant le menu après chaque action, jusqu&rsquo;à ce que l&rsquo;utilisateur choisisse de quitter le programme (utiliser la boucle FAIRE … TANQUE).</p>
+<p><strong>Corrigé :</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">est_premier</span>(nombre):
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> nombre <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">1</span>:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">2</span>, nombre):
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> nombre <span style="color:#f92672">%</span> i <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">est_pair_impair</span>(nombre):
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> nombre <span style="color:#f92672">%</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;pair&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;impair&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">convertir_base</span>(nombre, base):  
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> base <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">or</span> base <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">9</span>:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">raise</span> <span style="color:#a6e22e">ValueError</span>(<span style="color:#e6db74">&#34;La base doit être 2&lt;=b&lt;=9.&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    binaire <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    nb <span style="color:#f92672">=</span> nombre
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> nb <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        binaire <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;0&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">while</span> nb <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            binaire <span style="color:#f92672">=</span> str(nb <span style="color:#f92672">%</span> base) <span style="color:#f92672">+</span> binaire
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            nb <span style="color:#f92672">=</span> nb <span style="color:#f92672">//</span> base  
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> binaire
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">fact</span>(nombre):
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> nombre <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">0</span>:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">raise</span> <span style="color:#a6e22e">ValueError</span>(<span style="color:#e6db74">&#34;La factorielle n&#39;est pas définie pour les nombres négatifs.&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> nombre <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        f <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">1</span>, nombre <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>):
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            f <span style="color:#f92672">=</span> f <span style="color:#f92672">*</span> i
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> f
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">while</span> <span style="color:#66d9ef">True</span>:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    x<span style="color:#f92672">=</span>int(input(<span style="color:#e6db74">&#34;Veuillez saisir un entier positif : &#34;</span>))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> x <span style="color:#f92672">&gt;</span><span style="color:#ae81ff">0</span>:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">break</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Pour activer le menu, veuillez tapez 1.&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>m<span style="color:#f92672">=</span>int(input())
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>choice<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">while</span> choice<span style="color:#f92672">!=</span><span style="color:#ae81ff">5</span>:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> m<span style="color:#f92672">==</span><span style="color:#ae81ff">1</span>:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">&#34;Menu :&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">&#34;1. Vérifier et afficher si le nombre est un nombre premier.&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">&#34;2. Tester si un entier donné en entrée est pair ou impair.&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">&#34;3. Convertir un nombre décimal non négatif en base b (où b est également saisi par l&#39;utilisateur).&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">&#34;4. Calculer la factorielle d’un entier non négatif donné en entrée.&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">&#34;5. Quitter le menu.&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">&#34;Veuillez choisir une option.&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        choice<span style="color:#f92672">=</span>int(input())
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">match</span> choice:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">1</span>:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">if</span> est_premier(x):
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                    print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">{</span>x<span style="color:#e6db74">}</span><span style="color:#e6db74"> est un nombre premier.&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                    print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">{</span>x<span style="color:#e6db74">}</span><span style="color:#e6db74"> n&#39;est pas un nombre premier.&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">2</span>:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                pair_impair <span style="color:#f92672">=</span> est_pair_impair(x)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">{</span>x<span style="color:#e6db74">}</span><span style="color:#e6db74"> est un nombre </span><span style="color:#e6db74">{</span>pair_impair<span style="color:#e6db74">}</span><span style="color:#e6db74">.&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">3</span>:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                b <span style="color:#f92672">=</span> int(input(<span style="color:#e6db74">&#34;Veuillez saisir la base (supérieure ou égale à 2) : &#34;</span>))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">try</span>:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                    binaire <span style="color:#f92672">=</span> convertir_base(x, b)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                    print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Le nombre </span><span style="color:#e6db74">{</span>x<span style="color:#e6db74">}</span><span style="color:#e6db74"> en base </span><span style="color:#e6db74">{</span>b<span style="color:#e6db74">}</span><span style="color:#e6db74"> est : </span><span style="color:#e6db74">{</span>binaire<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">except</span> <span style="color:#a6e22e">ValueError</span> <span style="color:#66d9ef">as</span> e:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                    print(e)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">4</span>:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">try</span>:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                    f <span style="color:#f92672">=</span> fact(x)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                    print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;La factorielle de </span><span style="color:#e6db74">{</span>x<span style="color:#e6db74">}</span><span style="color:#e6db74"> est : </span><span style="color:#e6db74">{</span>f<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">except</span> <span style="color:#a6e22e">ValueError</span> <span style="color:#66d9ef">as</span> e:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                    print(e)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">5</span>:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                print(<span style="color:#e6db74">&#34;Au revoir !&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">case</span> _:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                print(<span style="color:#e6db74">&#34;Erreur : option invalide.&#34;</span>)
 </span></span></code></pre></div>
       </div></div>
 
