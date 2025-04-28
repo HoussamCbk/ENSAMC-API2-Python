@@ -217,4 +217,111 @@ while choice!=5:
 
                 print("Erreur : option invalide.")
 ```
+
+Exercice 2 :
+
+**Enoncé :**
+On souhaite programmer une application simulant le fonctionnement d'un distributeur automatique de billets de banque.
+
+	1.Le programme demande à l'utilisateur de saisir un montant qu'il souhaite retirer.
 	
+	2.Il vérifie si le montant est un multiple de 100 DH (montant minimal requis pour un retrait).
+	
+	3.Si le montant est valide, le programme simule la remise des billets en optimisant le nombre de billets distribués (200 DH et 100 DH).
+	
+	4.Le programme affiche ensuite un récapitulatif du retrait effectué.
+	
+	Q1. Écrire une fonction pour demander à l'utilisateur le montant à retirer :
+	Si le montant n'est pas un multiple de 100 DH, la fonction redemande un montant valide.
+	Q2. Écrire une fonction qui vérifie si le montant demandé est inférieur ou égal au solde disponible. Le solde disponible est fixé dans le programme principal (par exemple, 5000 DH) et est affiché à l'utilisateur avant qu'il ne saisisse le montant. Si le montant est supérieur au solde disponible, afficher un message d'erreur. Sinon, valider le montant demandé.
+	Q3. Écrire une fonction qui simule la remise des billets en utilisant le minimum de billets : Les billets disponibles sont : 200 DH et 100 DH.
+	Par exemple :
+	Montant à retirer : 700 DH
+	Billets distribués : 3 billet(s) de 200 DH + 1 billet(s) de 100 DH
+	ENSAM-Casablanca Programmation Python API-2
+	3
+	Q4. Écrire une fonction qui met à jour le solde disponible en fonction du montant retiré.
+	Q5. Écrire un programme principal pour simuler l’interaction complète avec l’utilisateur, en utilisant les fonctions précédentes :
+	1-Demander le montant.
+	2-Vérifier la validité du montant et le solde disponible.
+	3-Calculer et afficher les billets distribués.
+	4-Mettre à jour et afficher le solde après le retrait.
+
+
+
+
+**Corrigé :**
+
+```python
+def retirer(montant):
+
+    while montant % 100 != 0:
+
+        print("Le montant doit être un multiple de 100 DH.")
+
+        montant = int(input("Veuillez saisir un montant à retirer : "))
+
+    return montant
+
+  
+
+def verifier_solde(montant, solde):
+
+    if montant > solde:
+
+        print("Montant supérieur au solde disponible.")
+
+        return False
+
+    return True
+
+35
+
+def distribuer_billets(montant):
+
+    billets200 = montant // 200
+
+    montant = montant % 200
+
+    billets100 = montant // 100
+
+    return billets200, billets100
+
+  
+
+def mettre_a_jour_solde(solde, montant):
+
+    return solde - montant
+
+  
+  
+
+solde = 5000  
+
+print(f"Solde disponible : {solde} DH")
+
+  
+
+montant = int(input("Veuillez saisir le montant à retirer : "))
+
+  
+
+montant = retirer(montant)
+
+  
+
+if verifier_solde(montant, solde):
+
+    billets200, billets100 = distribuer_billets(montant)
+
+    solde = mettre_a_jour_solde(solde, montant)
+
+    print(f"Billets distribués : {billets200} billet(s) de 200 DH + {billets100} billet(s) de 100 DH")
+
+    print(f"Solde après retrait : {solde} DH")
+
+else:
+
+    print("Retrait annulé.")
+```
+
