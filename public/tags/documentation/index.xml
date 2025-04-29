@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Documentation on Terminal</title>
+    <link>/tags/documentation/</link>
+    <description>Recent content in Documentation on Terminal</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 29 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/tags/documentation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Numpy Doc - Python</title>
+      <link>/posts/numpy-doc/</link>
+      <pubDate>Tue, 29 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>/posts/numpy-doc/</guid>
+      <description>&lt;h3 id=&#34;step-1--before-proceding-installation-of-numpy-library-you-must-install-pip-&#34;&gt;&lt;strong&gt;Step 1 :&lt;/strong&gt; Before proceding installation of Numpy Library you must install pip :&lt;/h3&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://pip.pypa.io/en/stable/installation/&#34;&gt;Check this website &lt;/a&gt;&lt;/p&gt;&#xA;&lt;h4 id=&#34;supported-methods&#34;&gt;Supported Methods&lt;a href=&#34;https://pip.pypa.io/en/stable/installation/#supported-methods&#34; title=&#34;Link to this heading&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&#xA;&lt;p&gt;If your Python environment does not have pip installed, there are 2 mechanisms to install pip supported directly by pip’s maintainers:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://pip.pypa.io/en/stable/installation/#ensurepip&#34;&gt;&lt;code&gt;ensurepip&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://pip.pypa.io/en/stable/installation/#get-pip-py&#34;&gt;&lt;code&gt;get-pip.py&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Methode 1 : ensurepip&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;C:&lt;span style=&#34;color:#75715e&#34;&gt;&amp;gt; py -m ensurepip --upgrade&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Methode 2 : get-pip.py&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;C:&lt;span style=&#34;color:#75715e&#34;&gt;&amp;gt; py get-pip.py&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;step-2--upgrading-pip&#34;&gt;&lt;strong&gt;Step 2 :&lt;/strong&gt; Upgrading pip&lt;/h3&gt;&#xA;&lt;p&gt;Upgrade your &lt;code&gt;pip&lt;/code&gt; by running:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -26,13 +26,15 @@ tags:
 - **Summary**: 
 - [Link to Week 1 Notes](Python-week1.md)  
   - Brief overview of Python syntax, basic data types (strings, integers, etc.), and operations.
-  ### Week 2:  Python  scripts
+### Week 2:  Python  scripts
 - **Topics Covered**: TP3
 - **Summary**:  
 - [Link to Week 2 Notes](Python-week2.md)  
-
-
 ---
+
+## Libraries
+- **Numpy Library** : Check this documentation :
+- [Link to the Numpy Documentation](Numpy-Doc.md)  
 
 ### 🧠 Key Concepts to Remember
 - **Concept 1**: Understanding Python syntax, data types, and operations.
