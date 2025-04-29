@@ -227,11 +227,18 @@ C:&gt; py get-pip.py Step 2 : Upgrading pip Upgrade your pip by running:
 And write the following code, then run it.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span>
 </span></span><span style="display:flex;"><span>numpy
-</span></span><span style="display:flex;"><span>print
-</span></span><span style="display:flex;"><span>numpy <span style="color:#f92672">.</span>__version__) <span style="color:#75715e"># ou bien</span>
-</span></span><span style="display:flex;"><span>print
-</span></span><span style="display:flex;"><span>numpy<span style="color:#f92672">.</span>version<span style="color:#f92672">.</span>version
-</span></span></code></pre></div>
+</span></span><span style="display:flex;"><span>print(numpy <span style="color:#f92672">.</span>__version__) <span style="color:#75715e"># ou bien print(numpy.version.version)</span>
+</span></span></code></pre></div><h3 id="for-those-who-had-version-conflicts">For those who had version conflicts<a href="#for-those-who-had-version-conflicts" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<p>Try to create first a python environement by runing this command in your CMD / Terminal :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>C:<span style="color:#75715e">&gt; python -m venv yourenvironnementname</span>
+</span></span></code></pre></div><p>Nb : You can name <code>yourenvironnementname</code> by any name for example ill name it <code>venv1</code> :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>C:<span style="color:#75715e">&gt; python -m venv venv1</span>
+</span></span></code></pre></div><p>Then activate your environnement by running the following command :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>C:<span style="color:#75715e">&gt; venv1\Scripts\activate</span>
+</span></span></code></pre></div><p>You should see someting like this :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>(venv1) C:&gt; 
+</span></span></code></pre></div><p>Then re install numpy while your python environnement is active.</p>
+
       </div></div>
 
   
